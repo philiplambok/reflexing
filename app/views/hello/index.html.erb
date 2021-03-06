@@ -1,0 +1,16 @@
+<h1>Hello#index</h1>
+<p>Find me in app/views/hello/index.html.erb</p>
+
+<%= link_to "Clicked in #{@count.to_i} times", '#', data: { step: 1, count: @count.to_i, reflex: 'click->Counter#increment' } %>
+
+
+<h4>With only stimulus</h4>
+
+<%= link_to "Clicked in #{@count.to_i} times", '#', data: { step: 1, count: @count.to_i, controller: 'counter', action: 'click->counter#increment' } %>
+
+<%= link_to 'Trigger the worker', hello_index_path(worker: true) %>
+
+<br>
+<hr>
+<div id="logs">
+</div>
