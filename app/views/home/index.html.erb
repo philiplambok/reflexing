@@ -1,0 +1,12 @@
+<br>
+<h4>Welcome to reflexing app!</h4>
+
+<p>Lets import some books with click this <%= link_to 'link', import_books_path, method: :post %></p>
+
+<div id="import_logs"></div>
+
+<hr>
+
+<div class="books">
+  <%= render 'books', books: @books %>
+</div>

@@ -1,0 +1,3 @@
+<div id="counter_link">
+  <%= link_to "Clicked in #{count.to_i} times", '#', data: { step: 1, count: count.to_i, controller: 'counter', action: 'click->counter#increment' } %>
+</div>

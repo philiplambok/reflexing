@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: 6867cf5c4dcd0710f860c9ce40607eadae413693
+  branch: master
+  specs:
+    faker (2.17.0)
+      i18n (>= 1.6, < 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -97,7 +105,7 @@ GEM
     msgpack (1.4.2)
     mysql2 (0.5.3)
     nio4r (2.5.7)
-    nokogiri (1.11.1-x86_64-darwin)
+    nokogiri (1.11.2-x86_64-darwin)
       racc (~> 1.4)
     pry (0.13.1)
       coderay (~> 1.1)
@@ -200,6 +208,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   cable_ready (~> 4.5)
+  faker!
   hiredis
   jbuilder (~> 2.7)
   listen (~> 3.3)

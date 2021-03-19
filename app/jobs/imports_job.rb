@@ -4,9 +4,6 @@ class ImportsJob < ApplicationJob
   queue_as :default
 
   def perform(*args)
-    # 10.times.each do
-    #   Worker.create(name: SecureRandom.hex)
-    # end
     (1..10).each do |index|
       cable_ready['sample_channel'].inner_html(
         selector: '#logs',
@@ -17,7 +14,7 @@ class ImportsJob < ApplicationJob
     end
     cable_ready['sample_channel'].inner_html(
       selector: '#logs',
-      html: "Importing was completed"
+      html: 'Completed, thank you for waiting!'
     )
     cable_ready.broadcast
   end
