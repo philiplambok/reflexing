@@ -28,7 +28,3 @@ $> bundle exec rake db:migrate
 ```sh
 $> rails s
 ```
-
-## Contributing
-
--
