@@ -1,24 +1,34 @@
-# README
+# Reflexing
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Build a sample reactive application in Rails.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+### Prerequisite
 
-* System dependencies
+- ruby 2.7.2p137
+- rails 6.1.0
 
-* Configuration
+### Install system dependencies
 
-* Database creation
+```sh
+$> bundle install
+$> yarn install
+```
 
-* Database initialization
+### Database creation
 
-* How to run the test suite
+```sh
+$> bundle exec rake db:create
+$> bundle exec rake db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Running project in local
 
-* Deployment instructions
+```sh
+$> rails s
+```
 
-* ...
+## Contributing
+
+-
